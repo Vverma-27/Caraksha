@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaRaksha</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="chatbot.css" />
+  </head>
+  <body
+    onload="
+      (function setup() {
+        chatbot.loadFiles([`bot.rive`]);
+      })()"
+  >
+    <header class="header">
+      <img src="logo-caraksha.png" alt="logo" class="logo" />
+      <nav>
+        <a href="#hiw" class="header-link">How It works</a>
+        <a href="#why" class="header-link">why caraksha</a>
+        <a href="#pricing" class="header-link">pricing</a>
+        <a href="#prototype" class="header-link">prototype blueprint</a>
+        <a href="#social" class="header-link">Social Initiatives</a>
+        <a href="#enquiry" class="header-link">contact us</a>
+      </nav>
+    </header>
+    <input type="checkbox" id="mobile-header" style="display: none" />
+    <label for="mobile-header" class="mobile-header">
+      <i class="fa fa-bars icon icon-header" aria-hidden="true"></i>
+      <i class="fa fa-times icon icon-header" aria-hidden="true"></i>
+      <nav class="mobile-nav">
+        <a href="#hiw" class="header-link">How It works</a>
+        <a href="#why" class="header-link">why caraksha</a>
+        <a href="#pricing" class="header-link">pricing</a>
+        <a href="#prototype" class="header-link">prototype blueprint</a>
+        <a href="#social" class="header-link">Social Initiatives</a>
+        <a href="#enquiry" class="header-link">contact us</a>
+      </nav>
+    </label>
+    <section class="hero-section section section-clipped">
+      <video
+        src="./background-video.mp4"
+        class="hero-background"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="hero-overlay"></div>
+      <section class="hero-cta-section">
+        <h1 class="hero-heading">
+          We value <br />
+          your life
+        </h1>
+        <section
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 4vmin;
+          "
+        >
+          <a href="#pricing">
+            <button class="hero-cta first">Check Our Pricing</button></a
+          >
+          <a href="#enquiry">
+            <button class="hero-cta">Contact Us</button>
+          </a>
+        </section>
+      </section>
+    </section>
+    <section class="section" id="hiw">
+      <h2 class="section-heading">How it works</h2>
+      <p class="para">
+        The device will be placed in the car in place of the music system. Music
+        can still play with the help of speakers and bluetooth.
+      </p>
+      <section class="row">
+        <section class="point-card">
+          <h5 class="index">1</h5>
+          <i class="fa fa-volume-up icon" aria-hidden="true"></i>
+          <h3 class="card-heading">Sound</h3>
+          <p class="point-info">
+            Connected speakers with sensors so that a warning of TOO CLOSE can
+            be given to the drivers (can have an off switch if lanes are narrow
+            and the beeping goes on)
+          </p>
+        </section>
+        <section class="point-card">
+          <h5 class="index">2</h5>
+          <i class="fa fa-beer icon" aria-hidden="true"></i>
+          <h3 class="card-heading">Alcohol</h3>
+          <p class="point-info">
+            If alcohol is consumed by the driver, there will be beeping sounds
+            in the car (no off switch). SOS will be sent to the family members
+            if the driver decides to drink and drive
+          </p>
+        </section>
+        <section class="point-card">
+          <h5 class="index">3</h5>
+          <i class="fa fa-fighter-jet icon" aria-hidden="true"></i>
+          <h3 class="card-heading">Speeding</h3>
+          <p class="point-info">
+            If car is going at high speed and the cars are very close, the cars
+            will stop If speed is medium high and the car makes a hard brake,
+            the car behind will automatically stop too (assuming it has the
+            device too) SOS will be sent to the family members if the driver
+            over speeds
+          </p>
+        </section>
+        <section class="point-card">
+          <h5 class="index">4</h5>
+          <i class="fa fa-bed icon" aria-hidden="true"></i>
+          <h3 class="card-heading">Drowsiness</h3>
+          <p class="point-info">
+            If the driver falls asleep (closes his/ her eyes for more than a few
+            seconds) or takes his/ her eyes off the road for more than a few
+            seconds then the camera will detect it and the speaker will start
+            beeping
+          </p>
+        </section>
+        <section class="point-card">
+          <h5 class="index">5</h5>
+          <i class="fa fa-exclamation-triangle icon" aria-hidden="true"></i>
+          <h3 class="card-heading">Accidents</h3>
+          <p class="point-info">
+            If there will be an accident, the health card of the general
+            driver/s of the car will be displayed on the dashboard SOS will be
+            sent to family members and ambulance will be contacted as well
+          </p>
+        </section>
+      </section>
+    </section>
+    <section class="section section-clipped" id="why">
+      <h2 class="section-heading">Why Caraksha</h2>
+      <p class="para">
+        Our product aims to provide a safety mechanism that could improve driver
+        safety as well as the safety of the citizens on the road. <br />
+        We identified three main reasons for car accidents in India-
+      </p>
+      <section class="row" style="margin-bottom: 8vmin">
+        <section class="problem">Distracted driving</section>
+        <section class="problem">drunk driving</section>
+        <section class="problem">overspeeding</section>
+      </section>
+      <p class="para">
+        Our product aims to reduce this by adding a device in the car at minimum
+        cost that helps improve road safety.
+      </p>
+      <section class="row">
+        <section class="point-card problem-card">
+          <h5 class="index">1</h5>
+          <i class="fa fa-road icon" aria-hidden="true"></i>
+          <p class="point-info">
+            This will prevent road accidents from occurring.
+          </p>
+        </section>
+        <section class="point-card problem-card">
+          <h5 class="index">2</h5>
+          <i class="fa fa-car icon" aria-hidden="true"></i>
+          <p class="point-info">
+            These will be portable so they’ll be able to connect these in their
+            old vehicles.
+          </p>
+        </section>
+        <section class="point-card problem-card">
+          <h5 class="index">3</h5>
+          <i class="fa fa-fighter-jet icon" aria-hidden="true"></i>
+          <p class="point-info">
+            It prevents over speeding and getting distracted while driving.
+          </p>
+        </section>
+        <section class="point-card problem-card">
+          <h5 class="index">4</h5>
+          <i class="fa fa-exclamation-triangle icon" aria-hidden="true"></i>
+          <p class="point-info">
+            In case of accidents time won’t be wasted in calling for an
+            ambulance and health record of the person would be available on the
+            screen
+          </p>
+        </section>
+      </section>
+    </section>
+    <section class="section" id="pricing">
+      <h2 class="section-heading">pricing</h2>
+      <section class="row" style="align-items: center; margin-bottom: 6vmin">
+        <section class="plan-card">
+          <h2 class="plan-heading">consumer</h2>
+          <h3 class="plan-price">
+            ₹30,000/<span class="plan-unit">per unit</span>
+          </h3>
+          <p class="para" style="text-align: start; font-size: 1rem">
+            For End users who would like to equip their existing cars with
+            caraksha
+          </p>
+        </section>
+        <section class="plan-card main">
+          <h2 class="plan-heading">enterprise</h2>
+          <h3 class="plan-price">
+            ₹10,000/<span class="plan-unit">per unit</span>
+          </h3>
+          <p class="para" style="text-align: start; font-size: 1rem">
+            For Car manufacturers who would like to equip their cars with
+            Caraksha in bulk.
+          </p>
+        </section>
+        <section class="plan-card">
+          <h2 class="plan-heading">corporation</h2>
+          <h3 class="plan-price">
+            ₹20,000/<span class="plan-unit">per unit</span>
+          </h3>
+          <p class="para" style="text-align: start; font-size: 1rem">
+            For Car manufacturers who would like to equip their cars with
+            Caraksha.
+          </p>
+        </section>
+      </section>
+      <p class="para" style="text-align: start">
+        For more information on pricing or deals, kindly contact us
+        <a href="#enquiry" class="link-cta">Here</a>
+      </p>
+    </section>
+    <section class="section section-clipped" id="prototype">
+      <h2 class="section-heading">prototype blueprint</h2>
+      <section class="blueprint-images">
+        <figure>
+          <img src="./sensor-1.png" alt="image" class="blueprint-image" />
+          <figcaption class="image-caption">Top View</figcaption>
+        </figure>
+        <figure>
+          <img class="blueprint-image" src="./sensor-2.png" alt="image" />
+          <figcaption class="image-caption">sensor View</figcaption>
+        </figure>
+      </section>
+    </section>
+    <section class="section" id="social">
+      <h2 class="section-heading">Our Social Initiatives</h2>
+      <p class="para">
+        Our organization's corporate social responsibility plan is highlighted
+        below.
+      </p>
+      <section class="row">
+        <section class="point-card">
+          <h5 class="index">1</h5>
+          <i class="fa fa-user icon" aria-hidden="true"></i>
+          <h3 class="card-heading">Skill Development</h3>
+          <p class="point-info">
+            We will tie up with government-approved motor driving training
+            schools like Chanakya MDTS, Oberoi MDTS, Shine Star MDTS, etc., and
+            the funds will cover the cost of the courses, We will get in touch
+            with service providers like Ola and Uber and send the youth for
+            further training to generate employment.
+          </p>
+        </section>
+        <section class="point-card">
+          <h5 class="index">2</h5>
+          <i class="fa fa-tree icon" aria-hidden="true"></i>
+          <h3 class="card-heading">Environment Preservation</h3>
+          <p class="point-info">
+            We will help in replanting the trees that are harmed by motor
+            accidents.
+          </p>
+        </section>
+        <section class="point-card">
+          <h5 class="index">3</h5>
+          <i class="fa fa-home icon" aria-hidden="true"></i>
+          <h3 class="card-heading">Sheltering Homes</h3>
+          <p class="point-info">
+            We will collaborate with shelter homes and NGOs to accommodate
+            homeless people around the city. If need be, the company will pay to
+            expand the shelter homes to accommodate more people. have
+          </p>
+        </section>
+      </section>
+    </section>
+    <section
+      class="section"
+      id="enquiry"
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #0c1a2f;
+      "
+    >
+      <iframe
+        style="height: 50vmin; border: 0"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ50GxNnfmDDkRjxZ6oOYoyfg&key=AIzaSyCsjcqeXMX7asY8A8hVzOzAAvnBTgSQqro"
+      ></iframe>
+      <section class="section-enquiry">
+        <h2 class="enquiry-heading">Enquiry</h2>
+        <input
+          type="text"
+          name="name"
+          id="name-input"
+          class="input"
+          placeholder="Name"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email-input"
+          class="input"
+          placeholder="Email"
+        />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          placeholder="Message"
+          rows="10"
+          class="input"
+        ></textarea>
+        <button class="hero-cta">Enquire</button>
+      </section>
+    </section>
+    <footer class="footer" id="footer">
+      <section class="footer-column" style="align-items: flex-start">
+        <!-- <img src="logo-caraksha.png" alt="logo" /> -->
+        <h4 class="footer-logo">Caraksha</h4>
+        <p class="footer-link">
+          Lvis Noida, <br />
+          Sector 126, <br />
+          Noida, <br />
+          Uttar Pradesh-201303
+        </p>
+        <a class="footer-link" href="tel:+91-9971024733">
+          <i class="fa fa-phone icon" aria-hidden="true"></i> +91-9971024733
+        </a>
+        <a class="footer-link" href="mailto:caraksha.info@gmail.com">
+          <i class="fa fa-envelope icon" aria-hidden="true"></i>
+          caraksha.info@gmail.com
+        </a>
+      </section>
+      <section class="footer-column">
+        <h5 class="footer-heading">Useful Links</h5>
+        <a href="#hiw" class="footer-link">How It works</a>
+        <a href="#why" class="footer-link">why caraksha</a>
+        <a href="#pricing" class="footer-link">pricing</a>
+        <a href="#prototype" class="footer-link">prototype blueprint</a>
+        <a href="#enquiry" class="footer-link">contact us</a>
+      </section>
+      <section class="footer-column">
+        <h5 class="footer-heading">Social Media</h5>
+        <a
+          class="footer-link"
+          href="https://www.instagram.com/caraksha_/"
+          rel="nofollow noopener"
+          role="link"
+          tabindex="0"
+          target="_blank"
+        >
+          <i class="fa fa-instagram icon" aria-hidden="true"></i> instagram
+        </a>
+        <a
+          class="footer-link"
+          href="https://twitter.com/CarakshaInfo"
+          rel="nofollow noopener"
+          role="link"
+          tabindex="0"
+          target="_blank"
+        >
+          <i class="fa fa-twitter icon" aria-hidden="true"></i>
+          twitter
+        </a>
+        <a
+          class="footer-link"
+          href="https://www.facebook.com/CarakshaInfo/"
+          rel="nofollow noopener"
+          role="link"
+          tabindex="0"
+          target="_blank"
+        >
+          <i class="fa fa-facebook icon" aria-hidden="true"></i>
+          facebook
+        </a>
+      </section>
+    </footer>
+    <button
+      class="chatbot-button open-button"
+      onclick="(function(e){
+        // console.log(`hello`);
+    const el = document.querySelector(`.wrapper`);el.classList.remove(`closed`);el.classList.add(`open`);
+    const el2 = document.querySelector(`.chatbot-button`);el2.classList.add(`closed-button`);el2.classList.remove(`open-button`);
+   return false;
+})();return false;"
+    >
+      <img src="./chatbot.webp" alt="chatbot" />
+    </button>
+    <div class="wrapper closed">
+      <i
+        class="fa fa-times icon"
+        aria-hidden="true"
+        onclick="(function(e){
+        // console.log(`hello`);
+    const el = document.querySelector(`.wrapper`);el.classList.add(`closed`);el.classList.remove(`open`);
+    const el2 = document.querySelector(`.chatbot-button`);el2.classList.remove(`closed-button`);el2.classList.add(`open-button`);
+   return false;
+})();return false;"
+      ></i>
+      <div id="dialogue"></div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/idewcomputing/code-chatbot/src/chatbot.js"></script>
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>

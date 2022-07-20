@@ -93,13 +93,13 @@ video {
   box-sizing: border-box;
 }
 html {
-  font-size: 4px;
+  font-size: 5px;
 }
-@media screen and (min-width: 350px) {
+/* @media screen and (min-width: 350px) {
   html {
     font-size: 5px;
   }
-}
+} */
 @media screen and (min-width: 500px) {
   html {
     font-size: 8px;

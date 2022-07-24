@@ -3,7 +3,7 @@
 ^ <button onclick="chatbot.getReply('enquiry')">Enquiry About Product</button><br>
 ^ <button onclick="chatbot.getReply('order')">Place An Order</button><br>
 ^ <button onclick="chatbot.getReply('why us')">Why Us?</button><br>
-^ <button onclick="chatbot.getReply('How It Works')">How It Works?</button><br>
+^ <button onclick="chatbot.getReply('how it works')">How It Works?</button><br>
 ^ <button onclick="chatbot.getReply('grievance')">Register A Grievance About Our Product</button>
 
 + enquiry
@@ -14,7 +14,7 @@
 - We believe road accidents are rampant in India. We aim to prevent this issue. <br> For more information click 
 ^ <a href="#why"> here</a>
 
-+ How It Works
++ how it works
 - Our product is a unique innovation in the field of road safety. We researched and did not find any similar product to prevent road accidents and thus came up with Caraksha. It is an all-in-one sensor to prevent road accidents. <br> To read about it's features click
 ^ <a href="#hiw"> here</a>
 

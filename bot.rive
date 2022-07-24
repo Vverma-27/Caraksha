@@ -3,7 +3,8 @@
 ^ <button onclick="chatbot.getReply('enquiry')">Enquiry About Product</button><br>
 ^ <button onclick="chatbot.getReply('order')">Place An Order</button><br>
 ^ <button onclick="chatbot.getReply('why us')">Why Us?</button><br>
-^ <button onclick="chatbot.getReply('what is it')">What Is It?</button>
+^ <button onclick="chatbot.getReply('what is it')">What Is It?</button><br>
+^ <button onclick="chatbot.getReply('grievance')">Register A Grievance About Our Product?</button>
 
 + enquiry
 - We are very pleased by your interest in our product. You can contact us through our <br>
@@ -20,3 +21,15 @@
 + order
 - We are very pleased by your interest in our product. Kindly place an order 
 ^ <label for="order-checkbox" class="link-cta"> here</label>
+
++ grievance
+- We are sorry for any grievance our product caused to you. Kindly mention the incident below <br>
+^<form onsubmit="event.preventDefault();console.log(event);chatbot.getReply('submit')">
+^<input placeholder="Name" class="input" style="margin-bottom:0.6vmin;" required/><br>
+^<input placeholder="Email" class="input" style="margin-bottom:0.6vmin;" required/><br>
+^<textarea name="Grievance" placeholder="Grievance" class="input" style="margin-bottom:0.6vmin;" required></textarea><br>
+^<button class="hero-cta">Submit</button>
+^</form>
+
++ submit
+- We are very sorry to hear this. We have registered your complaint and we will try to resolve it as soon as possible. A customer care executive will also be getting in touch with you soon.

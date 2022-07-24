@@ -1,5 +1,5 @@
 + start
-- What would you like to ask?<br> 
+- Hi, i am franklin, your smart assistant. How can I help you today?<br><br> 
 ^ <button onclick="chatbot.getReply('enquiry')">Enquiry About Product</button><br>
 ^ <button onclick="chatbot.getReply('order')">Place An Order</button><br>
 ^ <button onclick="chatbot.getReply('why us')">Why Us?</button><br>

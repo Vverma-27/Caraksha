@@ -5,15 +5,18 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 } */
-.wrapper.open {
+.wrapper {
   max-width: 450px;
   width: 60%;
   position: fixed;
   bottom: 2vmin;
+  transform: scale(1);
   right: 2vmin;
+  transition: all 0.3s ease;
   height: 50%;
   box-sizing: border-box;
   margin: auto;
+  transform-origin: right bottom;
   padding: 2vmin;
   background-color: #777;
   display: flex;
@@ -29,7 +32,8 @@
   }
 }
 .wrapper.closed {
-  display: none;
+  /* display: none; */
+  transform: scale(0);
 }
 .chatbot-button {
   position: fixed;
@@ -40,9 +44,9 @@
   border-radius: 50%;
   overflow: hidden;
 }
-.closed-button {
+/* .closed-button {
   display: none;
-}
+} */
 .chatbot-button img {
   height: 100%;
   width: 100%;

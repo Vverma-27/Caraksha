@@ -179,7 +179,7 @@ table {
   /* border-bottom-right-radius: 20px; */
 }
 .mobile-header {
-  position: absolute;
+  position: fixed;
   right: 4vmin;
   top: 2vmin;
   height: 14vmin;
@@ -220,14 +220,15 @@ table {
   position: absolute;
   top: 120%;
   left: 50%;
-  transform: translateX(-50%);
   border-radius: 4px;
   background-color: #000106;
-  height: 0;
-  width: 0;
+  height: 25vmin;
+  transform-origin: 0% -30%;
+  width: 20vmin;
+  transform: scale(0) translateX(-50%);
   transition: all 0.5s ease;
   border-radius: 10px;
-  z-index: 1;
+  z-index: -1;
   /* padding-top: 5vmin; */
   /* clip-path: polygon(
     0 20%,
@@ -257,8 +258,7 @@ table {
 }
 #mobile-header:checked + .mobile-header .mobile-nav {
   /* display: flex; */
-  height: 25vmin;
-  width: 20vmin;
+  transform: scale(1) translateX(-50%);
 }
 #mobile-header:checked + .mobile-header .mobile-nav::after {
   /* display: flex; */

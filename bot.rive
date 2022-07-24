@@ -4,7 +4,7 @@
 ^ <button onclick="chatbot.getReply('order')">Place An Order</button><br>
 ^ <button onclick="chatbot.getReply('why us')">Why Us?</button><br>
 ^ <button onclick="chatbot.getReply('How It Works')">How It Works?</button><br>
-^ <button onclick="chatbot.getReply('grievance')">Register A Grievance About Our Product?</button>
+^ <button onclick="chatbot.getReply('grievance')">Register A Grievance About Our Product</button>
 
 + enquiry
 - We are very pleased by your interest in our product. You can contact us through our <br>

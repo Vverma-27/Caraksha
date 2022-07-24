@@ -165,7 +165,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   /* box-shadow: 4px 6px 20px 0 #000; */
   /* top: 2vmin; */
   left: 0;
@@ -277,8 +277,25 @@ table {
     display: flex;
   }
 }
+.para.imp {
+  font-weight: bolder;
+  font-size: 1.2rem !important;
+  margin-top: 1vmin;
+}
 .logo {
   height: 98%;
+  display: flex;
+  align-items: center;
+  /* gap: 2vmin; */
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.logo img {
+  height: 100%;
+  margin-bottom: 3%;
 }
 nav {
   display: flex;
@@ -296,6 +313,52 @@ nav {
 }
 .section {
   padding: 8vmin 6vmax 20vmin;
+}
+.section:nth-of-type(odd) {
+  background: #0c1a2f;
+}
+#order-checkbox:checked ~ .modal {
+  display: flex;
+}
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  z-index: 100000;
+  display: none;
+}
+.modal-content {
+  padding: 4vmin;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2vmin;
+}
+.modal-heading {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 6rem;
+  color: #0c1a2f;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  margin-bottom: 5vmin;
+  text-decoration-thickness: 15px;
+  text-decoration-color: #0c1a2f;
+}
+.modal-content .input {
+  background: #000106;
+  color: #fff;
 }
 .hero-section {
   width: 100%;
@@ -414,7 +477,7 @@ nav {
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 163.15%;
-  letter-spacing: 0.2ch;
+  /* letter-spacing: 0.2ch; */
   color: #ffffff;
   text-align: center;
 }
@@ -499,11 +562,11 @@ nav {
   border-radius: 10px;
   width: 22vmax;
   padding: 4vmin;
-  height: 40vmin;
+  min-height: 40vmin;
 }
-.plan-card.main {
+/* .plan-card.main {
   height: 50vmin;
-}
+} */
 .link-cta {
   font-family: "Mulish";
   font-style: italic;

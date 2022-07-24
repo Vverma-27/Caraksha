@@ -1,6 +1,7 @@
 + start
 - What would you like to ask?<br> 
 ^ <button onclick="chatbot.getReply('enquiry')">Enquiry About Product</button><br>
+^ <button onclick="chatbot.getReply('order')">Place An Order</button><br>
 ^ <button onclick="chatbot.getReply('why us')">Why Us?</button><br>
 ^ <button onclick="chatbot.getReply('what is it')">What Is It?</button>
 
@@ -15,3 +16,7 @@
 + what is it
 - Our product is a unique innovation in the field of road safety. We researched and did not find any similar product to prevent road accidents and thus came up with Caraksha. It is an all-in-one sensor to prevent road accidents. <br> To read about it's features click
 ^ <a href="#hiw"> here</a>
+
++ order
+- We are very pleased by your interest in our product. Kindly place an order 
+^ <label for="order-checkbox" class="link-cta"> here</label>

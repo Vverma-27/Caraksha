@@ -19,7 +19,10 @@
       })()"
   >
     <header class="header">
-      <img src="logo-caraksha.png" alt="logo" class="logo" />
+      <div class="logo">
+        <img src="logo-caraksha.png" alt="logo" />
+        Caraksha
+      </div>
       <nav>
         <a href="#hiw" class="header-link">How It works</a>
         <a href="#why" class="header-link">why caraksha</a>
@@ -67,9 +70,18 @@
           <a href="#pricing">
             <button class="hero-cta first">Check Our Pricing</button></a
           >
-          <a href="#enquiry">
-            <button class="hero-cta">Contact Us</button>
-          </a>
+          <label for="order-checkbox">
+            <p
+              class="hero-cta"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              Place An Order
+            </p>
+          </label>
         </section>
       </section>
     </section>
@@ -83,7 +95,7 @@
         <section class="point-card">
           <h5 class="index">1</h5>
           <i class="fa fa-volume-up icon" aria-hidden="true"></i>
-          <h3 class="card-heading">Sound</h3>
+          <h3 class="card-heading">Proximity</h3>
           <p class="point-info">
             Connected speakers with sensors so that a warning of TOO CLOSE can
             be given to the drivers (can have an off switch if lanes are narrow
@@ -135,7 +147,7 @@
         </section>
       </section>
     </section>
-    <section class="section section-clipped" id="why">
+    <section class="section nothing" id="why">
       <h2 class="section-heading">Why Caraksha</h2>
       <p class="para">
         Our product aims to provide a safety mechanism that could improve driver
@@ -195,11 +207,15 @@
         <section class="plan-card">
           <h2 class="plan-heading">consumer</h2>
           <h3 class="plan-price">
-            ₹30,000/<span class="plan-unit">per unit</span>
+            ₹15,000/<span class="plan-unit">per unit</span>
           </h3>
-          <p class="para" style="text-align: start; font-size: 1rem">
-            For End users who would like to equip their existing cars with
+          <p class="para" style="text-align: start; font-size: 1.2rem">
+            1) For End users who would like to equip their existing cars with
             caraksha
+          </p>
+          <p class="para imp" style="text-align: start; font-size: 1.2rem">
+            2) Users can place an order
+            <label for="order-checkbox" class="link-cta">here</label>
           </p>
         </section>
         <section class="plan-card main">
@@ -207,19 +223,39 @@
           <h3 class="plan-price">
             ₹10,000/<span class="plan-unit">per unit</span>
           </h3>
-          <p class="para" style="text-align: start; font-size: 1rem">
-            For Car manufacturers who would like to equip their cars with
-            Caraksha in bulk.
+          <p class="para" style="text-align: start; font-size: 1.2rem">
+            1) For Car manufacturers who would like to equip their cars with
+            Caraksha in bulk (above 20,000 units).
+          </p>
+          <p class="para" style="text-align: start; font-size: 1.2rem">
+            2) Corporations who would like to partner with us as their exclusive
+            entertainment system partners.
+          </p>
+          <p class="para" style="text-align: start; font-size: 1.2rem">
+            3) We offer a 33% discount to these corporations in lieu of their
+            bulk order and exclusive partnership
+          </p>
+          <p class="para imp" style="text-align: start; font-size: 1.2rem">
+            4) Users can place an order
+            <label for="order-checkbox" class="link-cta">here</label>
           </p>
         </section>
         <section class="plan-card">
           <h2 class="plan-heading">corporation</h2>
           <h3 class="plan-price">
-            ₹20,000/<span class="plan-unit">per unit</span>
+            ₹12,000/<span class="plan-unit">per unit</span>
           </h3>
-          <p class="para" style="text-align: start; font-size: 1rem">
-            For Car manufacturers who would like to equip their cars with
-            Caraksha.
+          <p class="para" style="text-align: start; font-size: 1.2rem">
+            1) For Car manufacturers who would like to equip their cars with
+            Caraksha (above 5,000 units).
+          </p>
+          <p class="para" style="text-align: start; font-size: 1.2rem">
+            2) We offer a 20% discount to these corporations in lieu of future
+            partnerships and a bulk order.
+          </p>
+          <p class="para imp" style="text-align: start; font-size: 1.2rem">
+            3) Users can place an order
+            <label for="order-checkbox" class="link-cta">here</label>
           </p>
         </section>
       </section>
@@ -228,7 +264,7 @@
         <a href="#enquiry" class="link-cta">Here</a>
       </p>
     </section>
-    <section class="section section-clipped" id="prototype">
+    <section class="section nothing" id="prototype">
       <h2 class="section-heading">prototype blueprint</h2>
       <section class="blueprint-images">
         <figure>
@@ -281,6 +317,53 @@
         </section>
       </section>
     </section>
+    <input
+      type="checkbox"
+      name="order-checkbox"
+      id="order-checkbox"
+      style="display: none"
+    />
+    <section class="modal" id="order">
+      <form class="modal-content">
+        <label for="order-checkbox">
+          <i class="fa fa-times icon" aria-hidden="true"></i
+        ></label>
+        <h2 class="modal-heading">Place An Order</h2>
+        <input
+          type="text"
+          name="name"
+          id="name-input"
+          class="input"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="email-input"
+          class="input"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="number"
+          name="number"
+          id="number-input"
+          class="input"
+          placeholder="Units"
+          required
+        />
+        <textarea
+          name="Additional Comments"
+          id="Additional Comments"
+          cols="30"
+          placeholder="Additional Comments"
+          rows="10"
+          class="input"
+        ></textarea>
+        <button class="hero-cta first">Place Order</button>
+      </form>
+    </section>
     <section
       class="section"
       id="enquiry"
@@ -298,7 +381,7 @@
         allowfullscreen
         src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ50GxNnfmDDkRjxZ6oOYoyfg&key=AIzaSyCsjcqeXMX7asY8A8hVzOzAAvnBTgSQqro"
       ></iframe>
-      <section class="section-enquiry">
+      <form class="section-enquiry">
         <h2 class="enquiry-heading">Enquiry</h2>
         <input
           type="text"
@@ -306,6 +389,7 @@
           id="name-input"
           class="input"
           placeholder="Name"
+          required
         />
         <input
           type="email"
@@ -313,6 +397,7 @@
           id="email-input"
           class="input"
           placeholder="Email"
+          required
         />
         <textarea
           name="message"
@@ -321,9 +406,10 @@
           placeholder="Message"
           rows="10"
           class="input"
+          required
         ></textarea>
         <button class="hero-cta">Enquire</button>
-      </section>
+      </form>
     </section>
     <footer class="footer" id="footer">
       <section class="footer-column" style="align-items: flex-start">
@@ -353,6 +439,17 @@
       </section>
       <section class="footer-column">
         <h5 class="footer-heading">Social Media</h5>
+        <a
+          class="footer-link"
+          href="https://www.linkedin.com/company/caraksha/"
+          rel="nofollow noopener"
+          role="link"
+          tabindex="0"
+          target="_blank"
+        >
+          <i class="fa fa-linkedin icon" aria-hidden="true"></i>
+          linkedIn
+        </a>
         <a
           class="footer-link"
           href="https://www.instagram.com/caraksha_/"

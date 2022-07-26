@@ -161,7 +161,9 @@ table {
   /* width: 80%; */
   width: 100%;
   height: 10vmin;
-  background: #000106;
+  background: rgb(0, 1, 6, 0.6);
+  backdrop-filter: blur(2px);
+  /* background: transparent; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -316,11 +318,13 @@ nav {
   padding: 8vmin 6vmax 20vmin;
 }
 .section:nth-of-type(odd) {
-  background: #301da5;
+  /* background: #301da5; */
+
+  background: linear-gradient(to right bottom, #301da5, #776cbe);
 }
-.section:nth-of-type(odd) .index {
+/* .section:nth-of-type(odd) .index {
   color: rgb(200, 200, 202, 0.1);
-}
+} */
 .section:nth-of-type(odd) p,
 .section:nth-of-type(odd) h1,
 .section:nth-of-type(odd) h2,
@@ -328,9 +332,9 @@ nav {
 .section:nth-of-type(odd) h4 {
   color: #fff;
 }
-.section:nth-of-type(odd) .icon {
+/* .section:nth-of-type(odd) .icon {
   color: #c8c8ca !important;
-}
+} */
 #order-checkbox:checked ~ .modal {
   display: flex;
 }
@@ -388,7 +392,9 @@ nav {
 /* @media */
 .section-clipped {
   clip-path: polygon(0% 0, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
-  background: #301da5;
+  /* background: #301da5; */
+
+  /* background: linear-gradient(to left bottom, #301da5, #776cbe); */
   /* padding-bottom: 20vmin; */
 }
 .hero-background {
@@ -469,7 +475,10 @@ nav {
   color: #fff;
 }
 .hero-cta.first {
-  background: #301da5;
+  /* background: #301da5; */
+
+  background: linear-gradient(to right bottom, #301da5, #776cbe);
+  /* background: linear-gradient(to left bottom, #301da5, #776cbe); */
   border: none;
   color: #fff !important;
 }
@@ -480,7 +489,7 @@ nav {
   font-size: 5.2rem;
   line-height: 6.9rem;
   text-align: center;
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
   color: #0c0b0e;
   text-transform: capitalize;
   text-underline-offset: 3px;
@@ -510,30 +519,47 @@ nav {
 .point-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  gap: 3.5vmin;
   position: relative;
-}
-.problem-card {
-  /* align-items:; */
-  height: 22vmin;
 }
 .index {
   font-family: "Mulish";
   position: absolute;
-  right: 0;
+  left: 20%;
+  height: 4vmin;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 4vmin;
   top: 0;
   font-style: normal;
   font-weight: 900;
-  font-size: 20rem;
+  background: #0c0b0e;
+  border-radius: 50%;
+  font-size: 1.2rem;
   z-index: 0;
   line-height: 100%;
   text-transform: capitalize;
-  color: rgba(12, 11, 14, 0.1);
+  color: #fff;
 }
 .icon {
   color: #665c9a;
   font-size: 2.5rem !important;
+}
+.point-icon {
+  height: 15vmin;
+  width: 15vmin;
+  background: linear-gradient(to left bottom, #301da5, #776cbe);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.point-icon .icon {
+  color: #fff;
+  font-size: 3rem !important;
 }
 .card-heading {
   font-family: "Mulish";
@@ -551,6 +577,7 @@ nav {
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
+  text-align: center;
   line-height: 163.15%;
   color: #0c0b0e;
   width: 20vmax;
@@ -575,7 +602,9 @@ nav {
   color: #0c0b0e;
 }
 .plan-card {
-  background: #301da5;
+  /* background: #301da5; */
+
+  background: linear-gradient(to right bottom, #301da5, #776cbe);
   border-radius: 10px;
   width: 22vmax;
   padding: 4vmin;

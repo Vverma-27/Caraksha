@@ -141,7 +141,9 @@ div#dialogue {
 }
 .bot {
   /* margin-right: 50px; */
-  background-color: #301da5;
+  /* background-color: #301da5; */
+
+  background: linear-gradient(to right bottom, #301da5, #776cbe);
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;

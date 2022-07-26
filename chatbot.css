@@ -5,6 +5,26 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 } */
+.buttons-bot {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 1vmax;
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 2vmax; */
+}
+/* .buttons-bot button {
+  flex: 1;
+} */
+.buttons-bot button {
+  grid-column-end: span 5;
+}
+/* .buttons-bot button:nth-of-type(even) {
+  grid-column-start: 8;
+} */
+/* .buttons-bot button:nth-of-type(odd) {
+  grid-column-start: 1;
+} */
 .wrapper {
   max-width: 450px;
   width: 60%;
@@ -18,11 +38,14 @@
   margin: auto;
   transform-origin: right bottom;
   padding: 2vmin;
-  background-color: #777;
+  background-color: #eee;
   display: flex;
   flex-direction: column;
   /* backdrop-filter: blur(4px); */
   border-radius: 10px;
+}
+.wrapper.icon {
+  color: #301da5;
 }
 @media screen and (max-width: 768px) {
   .wrapper.open {
@@ -107,7 +130,6 @@ div#dialogue {
 .user-row {
   text-align: right;
 }
-
 .user,
 .bot {
   font-size: 1.2rem;
@@ -119,7 +141,9 @@ div#dialogue {
 }
 .bot {
   /* margin-right: 50px; */
-  background-color: #0c1a2f;
+  /* background-color: #301da5; */
+
+  background: linear-gradient(to right bottom, #301da5, #776cbe);
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
@@ -128,7 +152,7 @@ div#dialogue {
   color: #ffffff;
   border-bottom-left-radius: 0;
 }
-.bot button {
+.bot button:not(.hero-cta) {
   background-color: #000106;
   padding: 5px;
   outline: none;

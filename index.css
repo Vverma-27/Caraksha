@@ -131,7 +131,7 @@ section {
 }
 body {
   line-height: 1;
-  background: #000106;
+  background: #c8c8ca;
   scroll-behavior: smooth;
   /* overflow-x: hidden; */
 }
@@ -161,7 +161,9 @@ table {
   /* width: 80%; */
   width: 100%;
   height: 10vmin;
-  background: #000106;
+  background: rgb(0, 1, 6, 0.6);
+  backdrop-filter: blur(2px);
+  /* background: transparent; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -301,6 +303,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 4vmin;
+  align-items: center;
 }
 .header-link {
   color: #fff;
@@ -315,8 +318,23 @@ nav {
   padding: 8vmin 6vmax 20vmin;
 }
 .section:nth-of-type(odd) {
-  background: #0c1a2f;
+  /* background: #301da5; */
+
+  background: linear-gradient(to right bottom, #301da5, #776cbe);
 }
+/* .section:nth-of-type(odd) .index {
+  color: rgb(200, 200, 202, 0.1);
+} */
+.section:nth-of-type(odd) p,
+.section:nth-of-type(odd) h1,
+.section:nth-of-type(odd) h2,
+.section:nth-of-type(odd) h3,
+.section:nth-of-type(odd) h4 {
+  color: #fff;
+}
+/* .section:nth-of-type(odd) .icon {
+  color: #c8c8ca !important;
+} */
 #order-checkbox:checked ~ .modal {
   display: flex;
 }
@@ -349,12 +367,12 @@ nav {
   font-weight: 800;
   font-size: 3rem;
   line-height: 6rem;
-  color: #0c1a2f;
+  color: #301da5;
   text-decoration: underline;
   text-underline-offset: 10px;
   margin-bottom: 5vmin;
   text-decoration-thickness: 15px;
-  text-decoration-color: #0c1a2f;
+  text-decoration-color: #301da5;
 }
 .modal-content .input {
   background: #000106;
@@ -374,7 +392,9 @@ nav {
 /* @media */
 .section-clipped {
   clip-path: polygon(0% 0, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
-  background: #0c1a2f;
+  /* background: #301da5; */
+
+  /* background: linear-gradient(to left bottom, #301da5, #776cbe); */
   /* padding-bottom: 20vmin; */
 }
 .hero-background {
@@ -441,7 +461,7 @@ nav {
   color: #fff;
 }
 .hero-cta {
-  background: rgba(255, 255, 255, 0.8);
+  background: transparent;
   border-radius: 4px;
   border: none;
   width: 15vmax;
@@ -451,11 +471,16 @@ nav {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.6rem;
-  color: #000000;
+  border: 2px solid #301da5;
+  color: #fff;
 }
 .hero-cta.first {
-  background: #0c1a2f;
-  color: #fff;
+  /* background: #301da5; */
+
+  background: linear-gradient(to right bottom, #301da5, #776cbe);
+  /* background: linear-gradient(to left bottom, #301da5, #776cbe); */
+  border: none;
+  color: #fff !important;
 }
 .section-heading {
   font-family: "Playfair Display";
@@ -465,9 +490,9 @@ nav {
   line-height: 6.9rem;
   text-align: center;
   /* text-decoration-line: underline; */
-  color: #ffffff;
+  color: #0c0b0e;
   text-transform: capitalize;
-  /* text-underline-offset: 3px; */
+  text-underline-offset: 3px;
   margin-bottom: 6vmin;
   text-decoration-thickness: 2px;
 }
@@ -478,7 +503,7 @@ nav {
   font-size: 1.4rem;
   line-height: 163.15%;
   /* letter-spacing: 0.2ch; */
-  color: #ffffff;
+  color: #0c0b0e;
   text-align: center;
 }
 .row {
@@ -494,52 +519,71 @@ nav {
 .point-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  gap: 3.5vmin;
   position: relative;
-}
-.problem-card {
-  /* align-items:; */
-  height: 22vmin;
 }
 .index {
   font-family: "Mulish";
   position: absolute;
-  right: 0;
+  left: 20%;
+  height: 4vmin;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 4vmin;
   top: 0;
   font-style: normal;
   font-weight: 900;
-  font-size: 20rem;
+  background: #0c0b0e;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  z-index: 0;
   line-height: 100%;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 0.06);
+  color: #fff;
 }
 .icon {
-  color: #bdb1ef;
+  color: #665c9a;
   font-size: 2.5rem !important;
+}
+.point-icon {
+  height: 15vmin;
+  width: 15vmin;
+  background: linear-gradient(to left bottom, #301da5, #776cbe);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.point-icon .icon {
+  color: #fff;
+  font-size: 3rem !important;
 }
 .card-heading {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 800;
   font-size: 2rem;
-  line-height: 3.8rem;
+  line-height: 2.8rem;
   letter-spacing: 0.1em;
   /* text-decoration-line: underline; */
   text-transform: uppercase;
-  color: #ffffff;
+  color: #0c0b0e;
 }
 .point-info {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
+  text-align: center;
   line-height: 163.15%;
-  color: #ffffff;
+  color: #0c0b0e;
   width: 20vmax;
 }
 .problem {
-  background: #000106;
+  background: #c8c8ca;
   border-radius: 20px;
   /* flex: 1; */
   width: 23vmax;
@@ -555,14 +599,19 @@ nav {
   justify-content: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #0c0b0e;
 }
 .plan-card {
-  background: #0c1a2f;
+  /* background: #301da5; */
+
+  background: linear-gradient(to right bottom, #301da5, #776cbe);
   border-radius: 10px;
   width: 22vmax;
   padding: 4vmin;
   min-height: 40vmin;
+}
+.plan-card > * {
+  color: #fff !important;
 }
 /* .plan-card.main {
   height: 50vmin;
@@ -576,7 +625,7 @@ nav {
   cursor: pointer;
   text-decoration-line: underline;
   text-transform: capitalize;
-  color: #6f6fdf;
+  color: #0c0b0e;
 }
 .plan-price {
   font-family: "Mulish";
@@ -586,7 +635,7 @@ nav {
   line-height: 5rem;
   text-align: start;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: #fff;
 }
 .plan-unit {
   font-weight: 1000;
@@ -601,7 +650,7 @@ nav {
   text-align: start;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
 }
 .blueprint-images {
   display: flex;
@@ -619,7 +668,7 @@ nav {
   text-align: start;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
 }
 .blueprint-image {
   width: 33vmax;
@@ -649,7 +698,7 @@ nav {
   font-weight: 800;
   font-size: 3rem;
   line-height: 6rem;
-  color: #ffffff;
+  color: #fff;
   text-decoration: underline;
   text-underline-offset: 10px;
   margin-bottom: 5vmin;
@@ -689,7 +738,10 @@ nav {
   font-size: 1rem;
   text-transform: capitalize;
   line-height: 2.9rem;
-  color: #ffffff;
+  color: #ffffff !important;
+}
+.footer-link i {
+  color: #ffffff !important;
 }
 .footer-logo {
   /* font-family: "Yellowtail", cursive; */

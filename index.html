@@ -21,6 +21,8 @@
     <header class="header">
       <div class="logo">
         <img src="logo-caraksha.png" alt="logo" />
+
+        <!-- <video src="./logo.mp4" autoplay muted loop class="logo"></video> -->
         Caraksha
       </div>
       <nav>
@@ -28,8 +30,22 @@
         <a href="#why" class="header-link">why caraksha</a>
         <a href="#pricing" class="header-link">pricing</a>
         <a href="#prototype" class="header-link">prototype blueprint</a>
-        <a href="#social" class="header-link">Social Initiatives</a>
+        <!-- <a href="#social" class="header-link">Social Initiatives</a> -->
         <a href="#enquiry" class="header-link">contact us</a>
+        <label for="order-checkbox">
+          <p
+            class="hero-cta"
+            style="
+              display: flex;
+              width: 8vmax;
+              align-items: center;
+              height: 5vmin;
+              justify-content: center;
+            "
+          >
+            Place An Order
+          </p>
+        </label>
       </nav>
     </header>
     <input type="checkbox" id="mobile-header" style="display: none" />
@@ -68,9 +84,9 @@
           "
         >
           <a href="#pricing">
-            <button class="hero-cta first">Check Our Pricing</button></a
-          >
-          <label for="order-checkbox">
+            <button class="hero-cta first">Check Our Pricing</button>
+          </a>
+          <!-- <label for="order-checkbox">
             <p
               class="hero-cta"
               style="
@@ -81,7 +97,7 @@
             >
               Place An Order
             </p>
-          </label>
+          </label> -->
         </section>
       </section>
     </section>
@@ -95,54 +111,73 @@
         <section class="point-card">
           <h5 class="index">1</h5>
           <i class="fa fa-volume-up icon" aria-hidden="true"></i>
-          <h3 class="card-heading">Proximity</h3>
+          <h3 class="card-heading">
+            Proximity <br />
+            Sensors
+          </h3>
           <p class="point-info">
-            Connected speakers with sensors so that a warning of TOO CLOSE can
-            be given to the drivers (can have an off switch if lanes are narrow
-            and the beeping goes on)
+            Our sensors help you avoid unnecessary damage by warning you when
+            you are getting too close to another object. It works by a technique
+            called the echo sounder to detect obstacles, much like sonar. The
+            pulsing warning tone gets faster the closer you are to an obstacle.
+            The system is equipped with ultrasonic sensors , they are small and
+            can be painted to match the color of the vehicle so they blend in
+            and are barely noticeable.
           </p>
         </section>
         <section class="point-card">
           <h5 class="index">2</h5>
           <i class="fa fa-beer icon" aria-hidden="true"></i>
-          <h3 class="card-heading">Alcohol</h3>
+          <h3 class="card-heading">
+            Driver Alcohol <br />
+            Detection system
+          </h3>
           <p class="point-info">
-            If alcohol is consumed by the driver, there will be beeping sounds
-            in the car (no off switch). SOS will be sent to the family members
-            if the driver decides to drink and drive
+            The system detects the amount of alcohol that is consumed by the
+            driver of the vehicle. The system aims at preventing the user from
+            driving when drunk and thereby intends to reduce the number of
+            accidents occurring due to drunk driving.
           </p>
         </section>
         <section class="point-card">
           <h5 class="index">3</h5>
           <i class="fa fa-fighter-jet icon" aria-hidden="true"></i>
-          <h3 class="card-heading">Speeding</h3>
+          <h3 class="card-heading">
+            High Speed <br />
+            Alert System
+          </h3>
           <p class="point-info">
-            If car is going at high speed and the cars are very close, the cars
-            will stop If speed is medium high and the car makes a hard brake,
-            the car behind will automatically stop too (assuming it has the
-            device too) SOS will be sent to the family members if the driver
-            over speeds
+            This feature coordinates the car’s position, via GPS, with a
+            database of speed limit information to alert drivers if they’re
+            speeding. This helps drivers maintain a safe driving speed.
           </p>
         </section>
         <section class="point-card">
           <h5 class="index">4</h5>
           <i class="fa fa-bed icon" aria-hidden="true"></i>
-          <h3 class="card-heading">Drowsiness</h3>
+          <h3 class="card-heading">
+            Driver Drowsiness <br />
+            Detection System
+          </h3>
           <p class="point-info">
-            If the driver falls asleep (closes his/ her eyes for more than a few
-            seconds) or takes his/ her eyes off the road for more than a few
-            seconds then the camera will detect it and the speaker will start
-            beeping
+            Drowsiness detection is a safety technology that can prevent
+            accidents that are caused by drivers who fell asleep while driving.
+            Drowsiness detection system will detect if a person’s eyes are
+            closed for a few seconds. This system will alert the driver when
+            drowsiness is detected.
           </p>
         </section>
         <section class="point-card">
           <h5 class="index">5</h5>
           <i class="fa fa-exclamation-triangle icon" aria-hidden="true"></i>
-          <h3 class="card-heading">Accidents</h3>
+          <h3 class="card-heading">
+            Intelligent Accident detection <br />
+            and Alert System
+          </h3>
           <p class="point-info">
-            If there will be an accident, the health card of the general
-            driver/s of the car will be displayed on the dashboard SOS will be
-            sent to family members and ambulance will be contacted as well
+            This system aims to automatically detect an accident and quickly
+            inform the emergency services and concerned family members with
+            precise location through Short Message Service (SMS).
           </p>
         </section>
       </section>
@@ -368,7 +403,7 @@
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
-        background-color: #0c1a2f;
+        background-color: #301da5;
       "
     >
       <iframe

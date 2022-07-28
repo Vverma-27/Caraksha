@@ -142,8 +142,8 @@ div#dialogue {
 .bot {
   /* margin-right: 50px; */
   /* background-color: #301da5; */
+  background: linear-gradient(to right bottom, #03989e, #26f3e2);
 
-  background: linear-gradient(to right bottom, #301da5, #776cbe);
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
@@ -153,7 +153,7 @@ div#dialogue {
   border-bottom-left-radius: 0;
 }
 .bot button:not(.hero-cta) {
-  background-color: #000106;
+  background-color: #eee;
   padding: 5px;
   outline: none;
   margin-bottom: 4px;
@@ -163,7 +163,7 @@ div#dialogue {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
-  color: #fff;
+  color: #000;
   font-size: 1.2rem;
   line-height: 163.15%;
 }

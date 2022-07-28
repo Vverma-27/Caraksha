@@ -160,7 +160,7 @@ table {
 .header {
   /* width: 80%; */
   width: 100%;
-  height: 10vmin;
+  height: 12vmin;
   background: rgb(0, 1, 6, 0.6);
   backdrop-filter: blur(2px);
   /* background: transparent; */
@@ -296,8 +296,8 @@ table {
   color: #fff;
 }
 .logo img {
-  height: 100%;
-  margin-bottom: 3%;
+  height: 180%;
+  margin-top: 6%;
 }
 nav {
   display: flex;
@@ -318,9 +318,9 @@ nav {
   padding: 8vmin 6vmax 20vmin;
 }
 .section:nth-of-type(odd) {
-  /* background: #301da5; */
+  /* background: #03989E; */
 
-  background: linear-gradient(to right bottom, #301da5, #776cbe);
+  background: linear-gradient(to right bottom, #03989e, #26f3e2);
 }
 /* .section:nth-of-type(odd) .index {
   color: rgb(200, 200, 202, 0.1);
@@ -367,12 +367,12 @@ nav {
   font-weight: 800;
   font-size: 3rem;
   line-height: 6rem;
-  color: #301da5;
+  color: #03989e;
   text-decoration: underline;
   text-underline-offset: 10px;
   margin-bottom: 5vmin;
   text-decoration-thickness: 15px;
-  text-decoration-color: #301da5;
+  text-decoration-color: #03989e;
 }
 .modal-content .input {
   background: #000106;
@@ -392,9 +392,9 @@ nav {
 /* @media */
 .section-clipped {
   clip-path: polygon(0% 0, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
-  /* background: #301da5; */
+  /* background: #03989E; */
 
-  /* background: linear-gradient(to left bottom, #301da5, #776cbe); */
+  /* background: linear-gradient(to left bottom, #03989E, #26F3E2); */
   /* padding-bottom: 20vmin; */
 }
 .hero-background {
@@ -471,14 +471,14 @@ nav {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.6rem;
-  border: 2px solid #301da5;
+  border: 2px solid #03989e;
   color: #fff;
 }
 .hero-cta.first {
-  /* background: #301da5; */
+  /* background: #03989E; */
 
-  background: linear-gradient(to right bottom, #301da5, #776cbe);
-  /* background: linear-gradient(to left bottom, #301da5, #776cbe); */
+  background: linear-gradient(to right bottom, #03989e, #26f3e2);
+  /* background: linear-gradient(to left bottom, #03989E, #26F3E2); */
   border: none;
   color: #fff !important;
 }
@@ -551,7 +551,7 @@ nav {
 .point-icon {
   height: 15vmin;
   width: 15vmin;
-  background: linear-gradient(to left bottom, #301da5, #776cbe);
+  background: linear-gradient(to left bottom, #03989e, #26f3e2);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -583,7 +583,7 @@ nav {
   width: 20vmax;
 }
 .problem {
-  background: #c8c8ca;
+  background: #eee;
   border-radius: 20px;
   /* flex: 1; */
   width: 23vmax;
@@ -602,9 +602,9 @@ nav {
   color: #0c0b0e;
 }
 .plan-card {
-  /* background: #301da5; */
+  /* background: #03989E; */
 
-  background: linear-gradient(to right bottom, #301da5, #776cbe);
+  background: linear-gradient(to right bottom, #03989e, #26f3e2);
   border-radius: 10px;
   width: 22vmax;
   padding: 4vmin;

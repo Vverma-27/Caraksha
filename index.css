@@ -296,8 +296,8 @@ table {
   color: #fff;
 }
 .logo img {
-  height: 190%;
-  margin-top: 12%;
+  height: 200%;
+  margin-right: -12%;
 }
 nav {
   display: flex;
@@ -428,6 +428,16 @@ nav {
   .hero-background {
     left: 0;
   }
+}
+.logo-partner {
+  height: 30vmin;
+  width: 20vmax;
+}
+#partners figure {
+  background: #0b5160;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2vmin;
 }
 .hero-overlay {
   width: 100%;
@@ -671,7 +681,7 @@ nav {
   text-align: start;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #000106;
+  color: #fff;
 }
 .blueprint-image {
   width: 33vmax;

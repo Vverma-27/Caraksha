@@ -333,7 +333,7 @@ nav {
 .section:nth-of-type(odd) h2,
 .section:nth-of-type(odd) h3,
 .section:nth-of-type(odd) h4 {
-  color: #fff;
+  color: #000106;
 }
 /* .section:nth-of-type(odd) .icon {
   color: #c8c8ca !important;
@@ -461,7 +461,7 @@ nav {
   text-transform: capitalize;
   line-height: 14.6rem;
   opacity: 1;
-  color: #fff;
+  color: #fff !important;
 }
 .hero-cta {
   background: transparent;
@@ -671,7 +671,7 @@ nav {
   text-align: start;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #fff;
+  color: #000106;
 }
 .blueprint-image {
   width: 33vmax;
@@ -701,7 +701,7 @@ nav {
   font-weight: 800;
   font-size: 3rem;
   line-height: 6rem;
-  color: #fff;
+  color: #000106;
   text-decoration: underline;
   text-underline-offset: 10px;
   margin-bottom: 5vmin;

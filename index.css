@@ -131,7 +131,7 @@ section {
 }
 body {
   line-height: 1;
-  background: #c8c8ca;
+  background: #0b5160;
   scroll-behavior: smooth;
   /* overflow-x: hidden; */
 }
@@ -320,7 +320,10 @@ nav {
 .section:nth-of-type(odd) {
   /* background: #03989E; */
 
-  background: linear-gradient(to right bottom, #03989e, #26f3e2);
+  background: linear-gradient(to right bottom, #14b9bf, #5ce5eb);
+}
+.section:nth-of-type(even) .point-icon {
+  background: #14b9bf !important;
 }
 /* .section:nth-of-type(odd) .index {
   color: rgb(200, 200, 202, 0.1);
@@ -394,7 +397,7 @@ nav {
   clip-path: polygon(0% 0, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
   /* background: #03989E; */
 
-  /* background: linear-gradient(to left bottom, #03989E, #26F3E2); */
+  /* background: linear-gradient(to left bottom,#14b9bf, #5ce5eb); */
   /* padding-bottom: 20vmin; */
 }
 .hero-background {
@@ -477,8 +480,8 @@ nav {
 .hero-cta.first {
   /* background: #03989E; */
 
-  background: linear-gradient(to right bottom, #03989e, #26f3e2);
-  /* background: linear-gradient(to left bottom, #03989E, #26F3E2); */
+  background: linear-gradient(to right bottom, #14b9bf, #5ce5eb);
+  /* background: linear-gradient(to left bottom,#14b9bf, #5ce5eb); */
   border: none;
   color: #fff !important;
 }
@@ -490,7 +493,7 @@ nav {
   line-height: 6.9rem;
   text-align: center;
   /* text-decoration-line: underline; */
-  color: #0c0b0e;
+  color: #fff;
   text-transform: capitalize;
   text-underline-offset: 3px;
   margin-bottom: 6vmin;
@@ -503,7 +506,7 @@ nav {
   font-size: 1.4rem;
   line-height: 163.15%;
   /* letter-spacing: 0.2ch; */
-  color: #0c0b0e;
+  color: #fbf9ff;
   text-align: center;
 }
 .row {
@@ -545,13 +548,13 @@ nav {
   color: #fff;
 }
 .icon {
-  color: #665c9a;
+  color: #0b5160;
   font-size: 2.5rem !important;
 }
 .point-icon {
   height: 15vmin;
   width: 15vmin;
-  background: linear-gradient(to left bottom, #03989e, #26f3e2);
+  background: #0b5160;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -570,7 +573,7 @@ nav {
   letter-spacing: 0.1em;
   /* text-decoration-line: underline; */
   text-transform: uppercase;
-  color: #0c0b0e;
+  color: #fff;
 }
 .point-info {
   font-family: "Mulish";
@@ -579,11 +582,11 @@ nav {
   font-size: 1.2rem;
   text-align: center;
   line-height: 163.15%;
-  color: #0c0b0e;
+  color: #fff;
   width: 20vmax;
 }
 .problem {
-  background: #eee;
+  background: #0b5160;
   border-radius: 20px;
   /* flex: 1; */
   width: 23vmax;
@@ -599,12 +602,12 @@ nav {
   justify-content: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #0c0b0e;
+  color: #fff;
 }
 .plan-card {
   /* background: #03989E; */
 
-  background: linear-gradient(to right bottom, #03989e, #26f3e2);
+  background: linear-gradient(to right bottom, #14b9bf, #5ce5eb);
   border-radius: 10px;
   width: 22vmax;
   padding: 4vmin;
